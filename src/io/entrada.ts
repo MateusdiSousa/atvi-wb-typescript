@@ -10,5 +10,5 @@ export default class Entrada {
         let prompt = promptSync();
         let texto = prompt(mensagem)
         return texto
-    }
+    } 
 }

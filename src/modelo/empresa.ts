@@ -20,4 +20,16 @@ export default class Empresa{
     public get getServicos(){
         return this.servicos
     }
+
+    public deleteCliente(clienteD : Cliente):void{
+        this.clientes = this.clientes.filter(item => item !== clienteD);
+    }
+
+    public deleteServico(servicoD : Servico):void{
+        this.servicos = this.servicos.filter(item => item !== servicoD);
+    }
+
+    public deleteProduto(produtoD : Produto):void{
+        this.produtos = this.produtos.filter(item => item !== produtoD);
+    }
 }
