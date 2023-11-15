@@ -14,8 +14,7 @@ export default class ListagemClientes extends Listagem {
     }
 
     public listar(): void {
-        console.log('')
-        console.log("1 - Listar todos")
+        console.log("\n1 - Listar todos")
         console.log(`2 - Listar clientes que mais consumiram (em quantidade)`)
         console.log(`3 - Listar clientes menos consumiram (em quantidade)`)
         console.log(`4 - Listar clientes que mais consumiram`);

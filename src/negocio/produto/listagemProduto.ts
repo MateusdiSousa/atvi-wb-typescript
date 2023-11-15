@@ -13,7 +13,7 @@ export default class ListagemProdutos extends Listagem {
     }
 
     public listar(): void {
-        console.log('Como deseja listar os produtos?');
+        console.log('\nComo deseja listar os produtos?');
         console.log('1 - Listar todos os produtos');
         console.log('2 - Listar 5 produtos mais prestados');
         console.log('3 - Listar os produtos mais prestados');

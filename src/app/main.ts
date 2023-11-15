@@ -8,6 +8,7 @@ import CadastrarProduto from "../negocio/produto/cadastrarProduto";
 import ListagemProdutos from "../negocio/produto/listagemProduto";
 import CadastroServico from "../negocio/servico/cadastroServico";
 import ListagemServicos from "../negocio/servico/listagemServico";
+import { Teste } from "../negocio/teste";
 
 console.log(`Bem-vindo ao cadastro de clientes do Grupo World Beauty`)
 let empresa = new Empresa()
@@ -23,6 +24,7 @@ while (execucao) {
     console.log(`6 - Listar produto`);
     console.log(`7 - Comprar Produto`);
     console.log(`8 - Comprar Serviço`);
+    console.log(`9 - Criar ambiente de teste`)
     console.log(`0 - Sair`);
 
     let entrada = new Entrada()
@@ -62,6 +64,10 @@ while (execucao) {
             let comprarServico = new ComprarServico(empresa.getServicos)
             comprarServico.selecionarCliente(empresa.getClientes);
             comprarServico.comprar();
+            break;
+        case 9:
+            let teste = new Teste(empresa.getServicos,empresa.getProdutos,empresa.getClientes)
+            teste.ContruirAmbiente()
             break;
         case 0:
             execucao = false

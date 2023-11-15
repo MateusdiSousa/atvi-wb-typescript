@@ -15,7 +15,7 @@ export default class ComprarProduto extends Comprar {
     }
 
     public selecionarCliente(clientes: Array<Cliente>): void {
-        console.log("Selecione o cliente que realizará a compra");
+        console.log("\nSelecione o cliente que realizará a compra");
         console.log("-------------------------------------------");
         clientes.forEach(cliente => {
             console.log(`${clientes.indexOf(cliente) + 1} - nome : ${cliente.nome}`)
